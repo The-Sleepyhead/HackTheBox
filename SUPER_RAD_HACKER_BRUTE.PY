@@ -14,6 +14,8 @@ password = ''
 successflag = False
 notfound = False
 
+# For user list and password list make sure they are in the directory you're running this script from and names userlist and passlist.
+
 # Get passcount
 with open('passlist', 'r') as pl:
     passcount = sum(1 for line in pl)

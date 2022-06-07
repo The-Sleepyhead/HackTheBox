@@ -5,9 +5,6 @@ from time import sleep
 from colorama import Fore, init
 init()
 
-# User Creds
-# username = 'tomcat'
-# password = 's3cret'
 user = ''
 password = ''
 # Successflag
@@ -41,13 +38,3 @@ with open('userlist', 'r') as f:
                     print(Fore.YELLOW + '[-] Page not found')
                     notfound = True
                     break
-
-        
-
-
-# Request
-#response = requests.get('http://jerry.htb:8080/manager', auth = HTTPBasicAuth(user,password))
-
-
-# else:
-#     print(Fore.LIGHTRED_EX + f"[-] Something went wrong {response}")

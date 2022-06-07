@@ -1,4 +1,6 @@
-rom tqdm import tqdm
+# This script is extra. Requires libraries: tqdm, requests, colorama, playsound. You can install with pip3 install *library*
+
+from tqdm import tqdm
 import requests
 from requests.auth import HTTPBasicAuth
 from time import sleep
@@ -10,8 +12,9 @@ passwords = []
 
 '''There is a default creds list in SecList repository for Tomcat instances. 
 This list: https://github.com/danielmiessler/SecLists/blob/master/Passwords/Default-Credentials/tomcat-betterdefaultpasslist.txt needs to be in the working dir
-and named tomcatlist'''
+and named tomcatlist I've included it in this git'''
 
+# Separate Usernames from Passwords in tomcatlist. Should be formated username:password
 with open('tomcatlist', 'r') as creds:
   for line in creds.readlines():
     user = line.split(':')[0]
